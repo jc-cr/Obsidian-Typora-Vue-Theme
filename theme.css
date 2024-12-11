@@ -3,23 +3,34 @@
 */
 
 /* The primary color is #42b983 or #42b883.*/
-body{
-	--accent-h: 153;
+/* Original comment blocks and primary color definition remain unchanged */
+
+body {
+    /* Original variables */
+    --accent-h: 153;
     --accent-s: 47%;
     --accent-l: 49%;
-	--icon-color-hover: hsl(var(--interactive-accent-hsl));	
-	--background-modifier-message: hsl(var(--interactive-accent-hsl));
+    --icon-color-hover: hsl(var(--interactive-accent-hsl));    
+    --background-modifier-message: hsl(var(--interactive-accent-hsl));
     --background-modifier-hover: hsla(var(--interactive-accent-hsl), 0.05);
-	--nav-item-color-hover: hsl(var(--interactive-accent-hsl));
+    --nav-item-color-hover: hsl(var(--interactive-accent-hsl));
     --nav-item-color-active: hsl(var(--interactive-accent-hsl));
-	--table-header-weight: var(--bold-weight);
-	--table-header-color: var(--text-normal);
-	--h1-size: 2.2em;
-	--h2-size: 1.75em;
-	--h3-size: 1.4em;
-	--h4-size: 1.2em;
-	--h5-size: 1em;
-	--h6-size: 1em;
+    --table-header-weight: var(--bold-weight);
+    --table-header-color: var(--text-normal);
+    --h1-size: 2.2em;
+    --h2-size: 1.75em;
+    --h3-size: 1.4em;
+    --h4-size: 1.2em;
+    --h5-size: 1em;
+    --h6-size: 1em;
+
+    /* Header color variables */
+    --h1-color: hsl(0, 0%, 0%);          /* Pure black */
+    --h2-color: hsl(0, 0%, 15%);         /* Very dark grey */
+    --h3-color: hsl(0, 0%, 30%);         /* Dark grey */
+    --h4-color: hsl(0, 0%, 45%);         /* Medium dark grey */
+    --h5-color: hsl(0, 0%, 60%);         /* Medium grey */
+    --h6-color: hsl(0, 0%, 75%);         /* Light-medium grey */
 }
 
 .theme-light{
@@ -34,15 +45,64 @@ body{
 	--cus-highlight-cursor-line: rgba(245,204,142,0.12);
 }
 
-.theme-dark{
-	--text-normal: #EEEEEE;
-	--code-background: #1a1a1a;
-	--cus-inline-code-text: #f3b37f;
-	--cus-code-block-border: #1c1c1c;
-	--cus-table-header: #171717;
-	--cus-table-gap-tr: #1a1a1a;
-	--table-row-background-hover: #171717;
-	--cus-highlight-cursor-line: rgba(225,225,225, 0.12);
+/* Update the theme-dark colors to maintain contrast */
+.theme-dark {
+    --h1-color: hsl(0, 0%, 100%);        /* Pure white */
+    --h2-color: hsl(0, 0%, 90%);         /* Very light grey */
+    --h3-color: hsl(0, 0%, 80%);         /* Light grey */
+    --h4-color: hsl(0, 0%, 70%);         /* Medium light grey */
+    --h5-color: hsl(0, 0%, 60%);         /* Medium grey */
+    --h6-color: hsl(0, 0%, 50%);         /* Medium dark grey */
+}
+
+/* Apply the colors to headers in preview mode */
+.markdown-preview-view h1 {
+    color: var(--h1-color);
+}
+
+.markdown-preview-view h2 {
+    color: var(--h2-color);
+}
+
+.markdown-preview-view h3 {
+    color: var(--h3-color);
+}
+
+.markdown-preview-view h4 {
+    color: var(--h4-color);
+}
+
+.markdown-preview-view h5 {
+    color: var(--h5-color);
+}
+
+.markdown-preview-view h6 {
+    color: var(--h6-color);
+}
+
+/* Apply the colors to headers in editor mode */
+.markdown-source-view.mod-cm6 .cm-header-1 {
+    color: var(--h1-color);
+}
+
+.markdown-source-view.mod-cm6 .cm-header-2 {
+    color: var(--h2-color);
+}
+
+.markdown-source-view.mod-cm6 .cm-header-3 {
+    color: var(--h3-color);
+}
+
+.markdown-source-view.mod-cm6 .cm-header-4 {
+    color: var(--h4-color);
+}
+
+.markdown-source-view.mod-cm6 .cm-header-5 {
+    color: var(--h5-color);
+}
+
+.markdown-source-view.mod-cm6 .cm-header-6 {
+    color: var(--h6-color);
 }
 
 /* blockquote BEGIN*/

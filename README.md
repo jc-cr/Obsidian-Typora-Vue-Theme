@@ -89,7 +89,10 @@ Search `Typora-Vue` in Obsidian community theme store and download it.
 
 ### Manually
 
-Manually download the `Typora-Vue.zip` from [Releases](https://github.com/ZekunC/Obsidian-Typora-Vue-Theme/releases) to your local `\.obsidian\themes\` and unzip it.
+1. Clone this repo
+2. In your `.obsidian/themes/` dir, change the repo name to `Typora-Vue-JC-Edits`
+3. Restart Obsidian
+
 
 ## Contributing
 
