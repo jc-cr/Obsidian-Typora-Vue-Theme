@@ -288,3 +288,17 @@ thead {
     height: 100%;
 }
 /*Navigator File END*/
+
+/* Wide View for specific notes BEGIN */
+.wide-view .markdown-preview-view,
+.wide-view .markdown-source-view.is-live-preview,
+.wide-view .markdown-source-view.is-live-preview .cm-contentContainer {
+    --file-line-width: 100%;
+    max-width: 100%;
+    padding-right: var(--size-4-2);
+}
+
+.wide-view .markdown-source-view .cm-scroller {
+    padding-right: var(--size-4-2);
+}
+/* Wide View for specific notes END */
